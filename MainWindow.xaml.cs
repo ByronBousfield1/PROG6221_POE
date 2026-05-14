@@ -38,9 +38,7 @@ namespace CyberAwarenessBot
             TopicChipsList.ItemsSource = engine.AllTopics.ToList();
 
             string audioPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Assets", "greeting.wav");
-            AudioService.PlayGreeting(audioPath);
-
-            await ShowBotMessageAsync("Hello! Welcome to the Cybersecurity Awareness Bot. I'm here to help you stay safe online.");
+            AudioService.PlayGreeting("Assets/greeting.wav"); await ShowBotMessageAsync("Hello! Welcome to the Cybersecurity Awareness Bot. I'm here to help you stay safe online.");
             await Task.Delay(300);
             await ShowBotMessageAsync("Before we begin, may I know your name?");
 
