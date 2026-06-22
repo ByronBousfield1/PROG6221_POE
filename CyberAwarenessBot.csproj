@@ -8,9 +8,11 @@
     <UseWPF>true</UseWPF>
     <RootNamespace>CyberAwarenessBot</RootNamespace>
     <AssemblyName>CyberAwarenessBot</AssemblyName>
-    <ApplicationIcon></ApplicationIcon>
-    <StartupObject></StartupObject>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.3.0" />
+  </ItemGroup>
 
   <ItemGroup>
     <None Update="Assets\greeting.wav">

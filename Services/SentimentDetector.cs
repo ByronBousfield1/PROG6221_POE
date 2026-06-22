@@ -25,10 +25,10 @@ namespace CyberAwarenessBot.Services
             responseBuilders = new Dictionary<string, SentimentResponseBuilder>
             {
                 ["worried"]    = topic => $"It's completely understandable to feel that way about {topic}. Scammers and attackers can be very convincing. Let me share a tip to help you stay safe.",
-                ["frustrated"] = topic => $"I hear you — cybersecurity can feel overwhelming. Let's take it one step at a time with {topic}.",
-                ["curious"]    = topic => $"Good question! Here's something useful about {topic}:",
-                ["confused"]   = topic => $"No problem — let me explain {topic} in a simpler way.",
-                ["happy"]      = topic => $"Glad you're enjoying this! Here's another note about {topic}:",
+                ["frustrated"] = topic => $"I hear you. Cybersecurity can feel overwhelming. Let's take it one step at a time with {topic}.",
+                ["curious"]    = topic => $"Good question. Here's something useful about {topic}:",
+                ["confused"]   = topic => $"No problem. Let me explain {topic} in a simpler way.",
+                ["happy"]      = topic => $"Glad you're finding this useful. Here's another note about {topic}:",
                 ["sad"]        = topic => $"Sorry you're feeling down. Staying informed about {topic} is one way to feel more in control online."
             };
         }

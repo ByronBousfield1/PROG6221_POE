@@ -1,6 +1,4 @@
-using System.Media;
-
-using Susing System;
+using System;
 using System.IO;
 using System.Media;
 
@@ -19,7 +17,6 @@ namespace CyberAwarenessBot.Services
             }
             catch (Exception)
             {
-                // Silently handle errors
             }
         }
     }
